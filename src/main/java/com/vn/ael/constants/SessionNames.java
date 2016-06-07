@@ -1,0 +1,7 @@
+package com.vn.ael.constants;
+
+public interface SessionNames {
+	String ADVANCE_FORM_PRINT_PHIEU_CHI = "ADVANCE_FORM_PRINT_PHIEU_CHI";
+	String REFUND_PRINT_PHIEU_CHI = "REFUND_PRINT_PHIEU_CHI";
+	String REFUND_PRINT_PHIEU_THU = "REFUND_PRINT_PHIEU_THU";
+}

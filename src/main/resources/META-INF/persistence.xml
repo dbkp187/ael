@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="ApplicationEntityManager" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>org.appfuse.model.User</class>
+        <class>org.appfuse.model.Role</class>
+        <class>com.vn.ael.persistence.entity.Customer</class>
+        <class>com.vn.ael.persistence.entity.OfferPrice</class>
+        <class>com.vn.ael.persistence.entity.Configuration</class>
+        <class>com.vn.ael.persistence.entity.OfferItem</class>
+        <class>com.vn.ael.persistence.entity.Contseal</class>
+        <class>com.vn.ael.persistence.entity.Packageinfo</class>
+        <class>com.vn.ael.persistence.entity.Docservice</class>
+        <class>com.vn.ael.persistence.entity.Docsgeneral</class>
+        <class>com.vn.ael.persistence.entity.Inland</class>
+        <class>com.vn.ael.persistence.entity.Inlandsize</class>
+        <class>com.vn.ael.persistence.entity.Multitype</class>
+        <class>com.vn.ael.persistence.entity.Exfeetable</class>
+        <class>com.vn.ael.persistence.entity.Exhibition</class>
+        <class>com.vn.ael.persistence.entity.Truckingdetail</class>
+        <class>com.vn.ael.persistence.entity.Truckingservice</class>
+        <class>com.vn.ael.persistence.entity.Extendfeeacc</class>
+        <class>com.vn.ael.persistence.entity.Nhathau</class>
+        <class>com.vn.ael.persistence.entity.Attachment</class>
+        <class>com.vn.ael.persistence.entity.Realattachment</class>
+        <class>com.vn.ael.persistence.entity.Advancedetail</class>
+        <class>com.vn.ael.persistence.entity.Advanceform</class>
+        <class>com.vn.ael.persistence.entity.Refund</class>
+        <class>com.vn.ael.persistence.entity.Refunddetail</class>
+        <class>com.vn.ael.persistence.entity.Transreportext</class>
+        <class>com.vn.ael.persistence.entity.MoneyBook</class>
+        <properties>
+          <property name="hibernate.ejb.interceptor"
+                      value="com.vn.ael.persistence.entity.interceptors.StaticInterceptor" />          
+       </properties>
+    </persistence-unit>
+
+    <!-- WARNING: This file's file original source is at web/common/src/main/resources/META-INF. The
+        META-INF directory is included in the jsf, spring, struts and tapestry projects using svn:externals.
+        If you need to modify this file, please do so in web/common/src/main/resources/META-INF, check it
+        in, and then "svn up" for the other modules. -->
+</persistence>

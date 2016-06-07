@@ -1,0 +1,11 @@
+native2ascii lang.properties lang_out.properties -encoding UTF-8
+native2ascii langjs.properties lang_outjs.properties -encoding UTF-8
+git push origin master --force
+
+load data local infile 'E:\\Working\\Projects\\GitHub\\ael\\DB\\customerNewNT1.csv' into table customers CHARACTER SET 'utf8' fields terminated by ','
+enclosed by '"'
+lines terminated by '\r\n'
+(id,name,address,taxno,tel,fax,contact,email,companyType,country,code,creator,updator,createdDate,lastUpdateDate)
+
+622013764
+aeladmin

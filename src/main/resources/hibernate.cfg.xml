@@ -1,0 +1,43 @@
+<!-- NOTE: If you're working offline, you might have to change the DOCTYPE to the following:
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">-->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="org.appfuse.model.User"/>
+        <mapping class="org.appfuse.model.Role"/>
+        <mapping class="com.vn.ael.persistence.entity.Accountingcus" />
+		<mapping class="com.vn.ael.persistence.entity.Accountingcusdetail" />
+		<mapping class="com.vn.ael.persistence.entity.Advancedetail" />
+		<mapping class="com.vn.ael.persistence.entity.Advanceform" />
+		<mapping class="com.vn.ael.persistence.entity.Attachment" />
+		<mapping class="com.vn.ael.persistence.entity.BasedChildEntity" />
+		<mapping class="com.vn.ael.persistence.entity.BasedEntityTracking" />
+		<mapping class="com.vn.ael.persistence.entity.BaseEntity" />
+		<mapping class="com.vn.ael.persistence.entity.BasicAdvance" />
+		<mapping class="com.vn.ael.persistence.entity.Configuration" />
+		<mapping class="com.vn.ael.persistence.entity.Contseal" />
+		<mapping class="com.vn.ael.persistence.entity.Customer" />
+		<mapping class="com.vn.ael.persistence.entity.DocsEntity" />
+		<mapping class="com.vn.ael.persistence.entity.Docservice" />
+		<mapping class="com.vn.ael.persistence.entity.Docsgeneral" />
+		<mapping class="com.vn.ael.persistence.entity.Exfeetable" />
+		<mapping class="com.vn.ael.persistence.entity.Exhibition" />
+		<mapping class="com.vn.ael.persistence.entity.Extendfeeacc" />
+		<mapping class="com.vn.ael.persistence.entity.Inland" />
+		<mapping class="com.vn.ael.persistence.entity.Inlandsize" />
+		<mapping class="com.vn.ael.persistence.entity.Multitype" />
+		<mapping class="com.vn.ael.persistence.entity.Nhathau" />
+		<mapping class="com.vn.ael.persistence.entity.OfferItem" />
+		<mapping class="com.vn.ael.persistence.entity.OfferPrice" />
+		<mapping class="com.vn.ael.persistence.entity.Packageinfo" />
+		<mapping class="com.vn.ael.persistence.entity.Realattachment" />
+		<mapping class="com.vn.ael.persistence.entity.Refund" />
+		<mapping class="com.vn.ael.persistence.entity.Refunddetail" />
+		<mapping class="com.vn.ael.persistence.entity.Truckingdetail" />
+		<mapping class="com.vn.ael.persistence.entity.Truckingservice" />
+		<mapping class="com.vn.ael.persistence.entity.MoneyBook" />
+    </session-factory>
+</hibernate-configuration>

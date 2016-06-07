@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+        <Menu name="Home" title="menu.nhanvien" roles="ROLE_ADMIN,ROLE_USER" image="/images/icons/employee.png">
+        	<Item name="UserMenu" title="menu.user" page="/userform" image="/images/icons/profile.png"/>
+			<Item name="AdvanceMenu" title="menu.advanceList" page="/users/advanceRefunds" image="/images/icons/advance.png"/>
+        	<Item name="LogoutMenu" title="user.logout" page="/logout" image="/images/icons/exit.png"/>
+        </Menu>
+        <Menu name="SalesMenu" title="menu.sales" description="Sales Menu" roles="ROLE_ADMIN,ROLE_SALES" image="/images/icons/sales.png">
+        	<Item name="ManageCustomer" title="menu.sales.customers" page="/admin/sales/customerList" image="/images/icons/customers.png"/>
+<!--         	<Item name="ManageOfferPrice" title="menu.sales.prices" page="/admin/sales/offerPriceList"/> -->
+        </Menu>
+         <Menu name="DocsMenu" title="menu.docs" description="Sales Menu" roles="ROLE_ADMIN,ROLE_DOCS" image="/images/icons/manifest.png">
+         	<Item name="DVTQ" title="menu.docs.dvtq" page="/admin/docs/packageInfoList" image="/images/icons/custom.png"/>
+            <Item name="DVVT" title="menu.docs.dvvt" page="/admin/docs/inlandList" image="/images/icons/trans.png"/>
+            <Item name="DVTL" title="menu.docs.dvtl" page="/admin/docs/exhibitionList" image="/images/icons/exhibition.png"/>
+            <Item name="Shipment" title="menu.acct.shipment" page="/admin/docs/shipment" image="/images/icons/trans.png"/>
+<!--             <Item name="Nhathau" title="menu.tracking.nhathau" page="/admin/trucking/nhathauList" image="/images/icons/shipping.png"/> -->
+<!--             <Item name="Othes" title="menu.docs.dvk" page="/admin/config/constantList"/> -->
+        </Menu>
+         <Menu name="TrackingMenu" title="menu.tracking" description="Tracking Menu" roles="ROLE_ADMIN,ROLE_TRUCK" image="/images/icons/truck.png">
+         	<Item name="Trucking" title="menu.tracking.trucking" page="/admin/trucking/list" image="/images/icons/devli.png"/>
+        </Menu>
+         <Menu name="NhathauMenu" title="menu.nhathau" description="Nhathau Menu" roles="ROLE_ADMIN,ROLE_NHATHAU" image="/images/icons/shipping.png">
+        	<Item name="KeNhaThau" title="menu.acct.nhathau" page="/admin/accounting/nhathau/nhathauList" image="/images/icons/shipping.png"/>
+        	<Item name="KeVanTai" title="menu.acct.vantai" page="/admin/accounting/nhathau/inlandPackageinfo" image="/images/icons/trans.png"/>
+        </Menu>
+         <Menu name="AccountingMenu" title="menu.accounting" description="Accounting Menu" roles="ROLE_ADMIN,ROLE_ACCOUNTING" image="/images/icons/accounting.png">
+        	<Item name="DVTQ" title="menu.docs.dvtq" page="/admin/accounting/customList" image="/images/icons/custom.png"/>
+        	<Item name="DVVT" title="menu.docs.dvvt" page="/admin/accounting/transportList" image="/images/icons/trans.png"/>
+        	<Item name="DVTL" title="menu.docs.dvtl" page="/admin/accounting/exhibitionList" image="/images/icons/exhibition.png"/>
+        	<Item name="Fees" title="menu.docs.fees" page="/admin/accounting/feeTables" image="/images/icons/feeAcc.png"/>
+        	<Item name="Advance" title="menu.acct.advance" page="/admin/accounting/advanceRefunds" image="/images/icons/advance.png"/>
+			<Item name="Fees" title="phieuthu.title" page="/admin/accounting/phieuthuList" image="/images/icons/feeAcc.png"/>
+			<Item name="ManageDebit" title="debit.title" page="/admin/accounting/manageDebit" image="/images/icons/feeAcc.png"/>
+			<Item name="ManageTruckingFee" title="menu.contractor.payment.title" page="/admin/accounting/manageContractorPayment" image="/images/icons/feeAcc.png"/>
+			<Item name="ManageMoneyBook" title="menu.moneybook" page="/admin/accounting/moneyBook" image="/images/icons/feeAcc.png"/>
+			<Item name="ProfitLoss" title="menu.acct.profitloss" page="/admin/accounting/profitloss" image="/images/icons/trans.png"/>
+        </Menu>
+        <Menu name="AdminMenu" title="menu.admin" description="Admin Menu" roles="ROLE_ADMIN,ROLE_CONFIG,ROLE_DOCS,ROLE_TRUCK" page="/admin/users" image="/images/icons/admin.png">
+            <Item name="ViewUsers" title="menu.admin.users" page="/admin/users" image="/images/icons/employee.png" roles="ROLE_ADMIN"/>
+            <Item name="ActiveUsers" title="home.activeUsers" page="/admin/activeUsers" image="/images/icons/employee.png" roles="ROLE_ADMIN"/>
+            <Item name="ViewRoles" title="menu.admin.roles" page="/admin/roles" image="/images/icons/employee.png" roles="ROLE_ADMIN"/>
+            <Item name="ViewConfigs" title="menu.admin.configs" page="/admin/config/constantList" image="/images/icons/configure.png"/>
+            <Item name="Nhathau" title="menu.tracking.nhathau" page="/admin/config/nhathauList" image="/images/icons/shipping.png"/>
+            <Item name="Bank" title="menu.tracking.bankList" page="/admin/config/bankList" image="/images/icons/advance.png"/>
+            <!-- <Item name="Fees" title="menu.docs.fees" page="/admin/feeTables" image="/images/icons/feeAcc.png" roles="ROLE_ADMIN"/> -->
+        </Menu>
+    </Menus>
+</MenuConfig>
